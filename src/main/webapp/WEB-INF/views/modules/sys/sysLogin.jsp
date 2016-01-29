@@ -49,9 +49,9 @@
 	<h1 class="form-signin-heading">${fns:getConfig('productName')}</h1>
 	<form id="loginForm" class="form-signin" action="${ctx}/login" method="post">
 		<label class="input-label" for="username">登录名</label>
-		<input type="text" id="username" name="username" class="input-block-level required" value="${username}">
+		<input type="text" id="username" name="username" class="input-block-level required" value="thinkgem">
 		<label class="input-label" for="password">密码</label>
-		<input type="password" id="password" name="password" class="input-block-level required">
+		<input type="password" id="password" name="password" class="input-block-level required" value="admin">
 		<c:if test="${isValidateCodeLogin}"><div class="validateCode">
 			<label class="input-label mid" for="validateCode">验证码</label>
 			<sys:validateCode name="validateCode" inputCssStyle="margin-bottom:0;"/>
