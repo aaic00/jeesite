@@ -91,20 +91,6 @@
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
 
-	<!-- Activiti -->
-	<servlet>
-		<servlet-name>RestletServlet</servlet-name>
-		<servlet-class>org.restlet.ext.servlet.ServerServlet</servlet-class>
-		<init-param>
-			<param-name>org.restlet.application</param-name>
-			<param-value>com.thinkgem.jeesite.modules.act.rest.ActRestApplication</param-value>
-		</init-param>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>RestletServlet</servlet-name>
-		<url-pattern>/act/rest/service/*</url-pattern>
-	</servlet-mapping>
-
 	<!-- DruidStatView -->
 	<servlet>
 		<servlet-name>DruidStatView</servlet-name>
