@@ -81,16 +81,13 @@
 			<label class="control-label">上传图片、文件:</label>
 			<div class="controls">
 				<form:hidden id="nameImage" path="name" htmlEscape="false" maxlength="255" class="input-xlarge"/>
-				<sys:ckfinder input="nameImage" type="images" uploadPath="/test/test" selectMultiple="false"/>
 				<form:hidden id="nameFiles" path="name" htmlEscape="false" maxlength="255" class="input-xlarge"/>
-				<sys:ckfinder input="nameFiles" type="files" uploadPath="/test/test" selectMultiple="true"/>
 			</div>
 		</div>
 		<div class="control-group">
 			<label class="control-label">富文本编辑器:</label>
 			<div class="controls">
 				<form:textarea id="remarks" htmlEscape="true" path="remarks" rows="4" maxlength="200" class="input-xxlarge"/>
-				<sys:ckeditor replace="remarks" uploadPath="/test/test" />
 			</div>
 		</div>
 		<div class="control-group">
